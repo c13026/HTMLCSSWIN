@@ -124,8 +124,6 @@ ul{
     height: 48px;
     display: inline-block;
     text-align: right;
-    margin-right: 16px;
-    
 }
 .footer .mytext{
     font-size: 36px;
@@ -284,6 +282,16 @@ ul{
         position: relative;
         bottom: 5rem;
     }
+    .myfooter .col{
+        margin-bottom: 0px;
+    }
+    .myfooter ul{
+        flex-direction: column;
+        align-items: start;
+    }
+    .myfooter ul li{
+        margin: 8px !important;
+    }
     .myfooter .row{
         padding: 0;
         margin: 0;
@@ -307,8 +315,11 @@ ul{
     .footer .row .col img {
         margin-left: 0px;
     }
+    .footer .row .col li{
+        margin: 0;
+    }
     .footer .row .col li a {
-        padding: 6px;
+        padding: 0px;
     }
  }
  /* @media (max-width:375px){} */

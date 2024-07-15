@@ -65,7 +65,7 @@ table {
 }
 .nav{
     justify-content: space-between;
-    height: 80px;
+    height: 80px !important;
 }
 .nav ul a{
     color: #FFF;

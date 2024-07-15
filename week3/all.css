@@ -65,7 +65,7 @@ table {
 }
 .nav{
     justify-content: space-between;
-    height: 80px !important;
+    height: 80px;
 }
 .nav ul a{
     color: #FFF;
@@ -198,6 +198,9 @@ ul{
     }
     .header .nav{
         flex-direction: column;
+    }
+    .nav{
+        height: calc(80px + 96px);
     }
     .nav ul{
         width: 100vw;

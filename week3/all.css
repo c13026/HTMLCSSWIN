@@ -147,6 +147,7 @@ ul{
   }
   hr{
     margin: 32px 0;
+    border: 1px solid #FFF;
   }
   .row.myfooter{
     margin: 0;

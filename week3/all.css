@@ -203,25 +203,22 @@ ul{
         flex-direction: column;
         height: auto;
     }
-    /* .nav{
-        height: calc(80px + 96px);
-    } */
     .nav ul{
-        width: 100%;
+        width: inherit;
         flex-wrap: wrap;
         align-items: center;
         text-align: center;
         background: #AA0601;
-
     }
     .nav ul li{
-        width: calc(50% - 2px);
-        border: #FFF 1px solid;
-
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
     }
     .nav ul a{
-        margin-left: -16px;
-        margin-right: 16px;
+        border: #FFF 1px solid;
         width: 100%;
         color: #FFF;
         text-decoration: none;

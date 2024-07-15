@@ -154,7 +154,7 @@ ul{
   }
   @media (max-width:1300px){
     .container{
-        width: 100vw;
+        width: 100%;
     }
     .header{
         width: 100%;
@@ -194,7 +194,7 @@ ul{
   }
  @media (max-width:768px)  { /*and (min-width:376px) */
     .container{
-        width: 100vw;
+        width: 100%;
     }
     .header{
         width: 100%;
@@ -207,7 +207,7 @@ ul{
         height: calc(80px + 96px);
     } */
     .nav ul{
-        width: 100vw;
+        width: 100%;
         flex-wrap: wrap;
         align-items: center;
         text-align: center;

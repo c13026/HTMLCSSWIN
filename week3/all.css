@@ -50,6 +50,9 @@ table {
 body,*,*::after,*::before{
     font-family: "Roboto", "Noto Sans TC","Material Symbols Outlined";
 }
+body{
+    overflow-x: hidden;
+}
 .container{
     width: 1300px;
     margin: 0 auto;
@@ -65,7 +68,7 @@ body,*,*::after,*::before{
 }
 .nav{
     justify-content: space-between;
-    height: 80px;
+    /* height: 80px; */
 }
 .nav ul a{
     color: #FFF;
@@ -80,7 +83,7 @@ ul{
 }
 .nav img{
     width: 80px;
-    margin: 16px 0 auto;
+    margin: 16px 0;
 }
 
 
@@ -198,6 +201,7 @@ ul{
     }
     .header .nav{
         flex-direction: column;
+        height: auto;
     }
     .nav{
         height: calc(80px + 96px);

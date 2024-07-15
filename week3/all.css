@@ -50,7 +50,7 @@ table {
 body,*,*::after,*::before{
     font-family: "Roboto", "Noto Sans TC","Material Symbols Outlined";
 }
-body{
+.container,body{
     overflow-x: hidden;
 }
 .container{

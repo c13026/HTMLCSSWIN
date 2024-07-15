@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 /* css reset end */
-body,*,*::after,*::before{
+*,*::after,*::before{
     font-family: "Roboto", "Noto Sans TC" !important;
 }
 .container{

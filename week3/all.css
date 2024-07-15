@@ -49,10 +49,11 @@ table {
 /* css reset end */
 body,*,*::after,*::before{
     font-family: "Roboto", "Noto Sans TC","Material Symbols Outlined";
+    /* box-sizing: content-box; */
 }
-body{
-    overflow-x: hidden;
-}
+/* body{
+    overflow-x: hidden !important;
+} */
 .container{
     width: 1300px;
     margin: 0 auto;

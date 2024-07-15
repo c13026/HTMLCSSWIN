@@ -204,7 +204,7 @@ ul{
         height: auto;
     }
     .nav ul{
-        width: inherit !important;
+        width: stretch;
         flex-wrap: wrap;
         align-items: center;
         text-align: center;

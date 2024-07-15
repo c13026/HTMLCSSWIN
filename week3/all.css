@@ -48,7 +48,7 @@ table {
 }
 /* css reset end */
 *,*::after,*::before{
-    font-family: "Roboto", "Noto Sans TC" !important;
+    font-family: "Roboto", "Noto Sans TC";
 }
 .container{
     width: 1300px;

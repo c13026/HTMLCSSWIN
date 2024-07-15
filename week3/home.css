@@ -301,8 +301,8 @@ form button{
         margin: 40px auto;
     }
     .section5 .card {
-        width: calc(100% - 24px);
-        margin: 0 24px;
+        width: calc(100% - 48px);
+        margin: 0 24px 24px;
     }
  }
  /* @media (max-width:375px){

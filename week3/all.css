@@ -104,9 +104,9 @@ ul{
  /* border: #000 1px solid; */
  align-items: center;
 }
-.myrow{
+/* .myrow{
     margin:0 16px;
-}
+} */
 .footer .row .col{
     justify-content:space-between;
     align-items:center;

@@ -50,7 +50,7 @@ table {
 body,*,*::after,*::before{
     font-family: "Roboto", "Noto Sans TC","Material Symbols Outlined";
 }
-.container,body{
+body{
     overflow-x: hidden;
 }
 .container{
@@ -202,9 +202,9 @@ ul{
         flex-direction: column;
         height: auto;
     }
-    .nav{
+    /* .nav{
         height: calc(80px + 96px);
-    }
+    } */
     .nav ul{
         width: 100vw;
         flex-wrap: wrap;

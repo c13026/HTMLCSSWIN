@@ -36,8 +36,8 @@ h2{
     text-decoration: none;
 }
 .card-list{
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -16px;
+    margin-right: -16px;
     display: flex;
     align-items: flex-start;
 }
@@ -48,7 +48,7 @@ h2{
 }
 .bg-pink .card{
     width: 25%;
-    margin: 12px;
+    margin: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -206,14 +206,16 @@ form button{
     .card-list{
         margin-left: -24px;
         margin-right: -24px;
-        padding: 0 36px;
+        /* padding: 0 36px; */
+        padding: 0 24px !important;
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
     }
     .bg-pink .card{
-        width: calc(50% - 24px);
-        margin: 12px;
+        width: calc(50% - 48px);
+        margin: 12px 24px;
+        
         display: flex;
         
         justify-content: center;
@@ -300,6 +302,7 @@ form button{
     }
     .section5 .card {
         width: calc(100% - 24px);
+        margin: 0 24px;
     }
  }
  /* @media (max-width:375px){

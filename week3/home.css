@@ -207,7 +207,7 @@ form button{
         margin-left: -24px;
         margin-right: -24px;
         /* padding: 0 36px; */
-        padding: 0 24px !important;
+        padding: 0 24px;
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;

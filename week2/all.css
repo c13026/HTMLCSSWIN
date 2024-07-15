@@ -233,10 +233,7 @@ body{
 .project .myrow{
     justify-content: flex-end;
 }
-.project .col-7{
-    /* border: #FC0 1px solid; */
-    
-}
+
 .project .h1{
     color: #000;
     font-size: 64px;

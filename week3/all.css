@@ -204,7 +204,8 @@ ul{
         height: auto;
     }
     .nav ul{
-        width: stretch;
+        /* width: stretch; */
+        min-width: fit-content;
         flex-wrap: wrap;
         align-items: center;
         text-align: center;

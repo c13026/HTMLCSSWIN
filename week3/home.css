@@ -231,8 +231,14 @@ form button{
         text-align: center;
         margin: 0 auto;
     }
+    .section5 .card-list{
+        margin-left: -24px;
+        margin-right: -24px;
+        justify-content: center;
+    }
     .section5 .card{
-        width: calc(50% - 24px);
+        width: calc(50% - 48px);
+        margin: 0 12px 24px;
     }
     .from{
         width: 80%;

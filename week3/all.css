@@ -1,0 +1,306 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* css reset end */
+*,*::after,*::before{
+    font-family: "Roboto", "Noto Sans TC" ;
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+.container-fluid{
+    width: 100%;
+}
+.header{
+    background: #AA0601;
+}
+.d-flex{
+    display: flex;
+}
+.nav{
+    justify-content: space-between;
+    height: 80px;
+}
+.nav ul a{
+    color: #FFF;
+    text-decoration: none;
+    padding: 32px;
+    display: inline-block;
+}
+ul{
+    margin-left: -32px;
+    margin-right: -32px;
+    align-items: center;
+}
+.nav img{
+    width: 80px;
+    margin: 16px 0 auto;
+}
+
+
+.footer{
+    background: #AA0601;
+    color: #FFF;
+}
+.footer a{
+    color: #FFF;
+    text-decoration: none;
+}
+.footer .row{
+ width: 100%;
+ padding: 20px 0 0;
+ /* margin-right: -32px;
+ margin-left: -32px; */
+ justify-content: space-between;
+ /* border: #000 1px solid; */
+ align-items: center;
+}
+.myrow{
+    margin:0 16px;
+}
+.footer .row .col{
+    justify-content:space-between;
+    align-items:center;
+    margin-right: 8px;
+    margin-left: 8px;
+
+}
+
+.footer .row .col li a{
+    display:inline-block;
+    padding: 24px;
+}
+.footer .row .col img{
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    text-align: right;
+    margin-left: 16px;
+    
+}
+.footer .mytext{
+    font-size: 36px;
+    line-height: 54px;
+}
+.footer .mytext span{
+    font-size: 48px;
+    line-height: 54px;
+    position: relative;
+    top: 1rem;
+}
+.material-symbols-outlined {
+    margin-right: 16px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24 !important;
+  }
+  hr{
+    margin: 32px 0;
+  }
+  .row.myfooter{
+    margin: 0;
+    padding: 0;
+  }
+  @media (max-width:1300px){
+    .container{
+        width: 100vw;
+    }
+    .header{
+        width: 100%;
+    }
+    .header .nav{
+        justify-content: space-around;
+    }
+    .nav {
+        margin: 0 32px;
+        justify-content:space-around;
+    }
+    .footer .row{
+        margin: 0 -32px;
+        white-space:nowrap;
+    }
+    .footer .col{
+        padding-left: 72px;
+    }
+    .footer .row .col img{
+        width: 40px;
+        height: 40px;
+    }
+    .footer .row .col li a{
+        padding: 12px;
+    }
+    .footer hr{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .footer .row .col {
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+    .myfooter .col{
+        margin-bottom: 40px;
+    }
+  }
+ @media (max-width:768px)  { /*and (min-width:376px) */
+    .container{
+        width: 100vw;
+    }
+    .header{
+        width: 100%;
+    }
+    .header .nav{
+        flex-direction: column;
+    }
+    .nav ul{
+        width: 100vw;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        background: #AA0601;
+
+    }
+    .nav ul li{
+        width: calc(50% - 2px);
+        border: #FFF 1px solid;
+
+    }
+    .nav ul a{
+        margin-left: -16px;
+        margin-right: 16px;
+        width: 100%;
+        color: #FFF;
+        text-decoration: none;
+        padding: 16px;
+        display: inline-block;
+    }
+   .footer .row:nth-child(1) .col:nth-child(1){
+    display: none;
+   }
+   .footer .row:nth-child(1) .col:nth-child(2) ul{
+    justify-content:flex-end;
+    float: right;
+   }
+   .footer .row:nth-child(1) .col:nth-child(2){
+    width: 100%;
+   }
+   ul {
+    margin-left: -32px;
+    margin-right: -32px;
+    }
+    .footer .row{
+        padding: 24px 0;
+    }
+    .footer .row:nth-child(2){
+        margin: 0 -32px;
+        padding: 0;
+        /* float: left; */
+    }
+    .footer .mytext {
+        font-size: 16px;
+        line-height: 24px;
+        position: relative;
+        bottom: 4.5rem;
+    }
+    .footer .mytext span {
+        font-size: 24px;
+        line-height: 24px;
+        position: relative;
+        top: 0.5rem;
+    }
+    .material-symbols-outlined {
+        margin-right: 8px;
+    }
+    .footer .col {
+        padding-left: 16px;
+    }
+    .footer hr {
+        margin: 0.5rem 1rem;
+        position: relative;
+        bottom: 4rem;
+    }
+    .footer .container{
+        height: 236px;
+    }
+    .myfooter{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        position: relative;
+        bottom: 5rem;
+    }
+    .myfooter .row{
+        padding: 0;
+        margin: 0;
+    }
+    .myfooter .col {
+        margin-bottom: 0;
+        padding-left: 5rem;
+        width: 100%;
+        text-align: left;
+        justify-content:left;
+    }
+    .myfooter p{
+        font-size: 16px;
+        line-height: 30px;
+        padding-left: .5rem;
+    }
+    .myfooter ul{
+        width: 100%;
+        margin: 0;
+    }
+    .footer .row .col img {
+        margin-left: 0px;
+    }
+    .footer .row .col li a {
+        padding: 6px;
+    }
+ }
+ /* @media (max-width:375px){} */

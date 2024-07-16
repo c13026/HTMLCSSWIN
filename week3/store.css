@@ -1,0 +1,110 @@
+.title{
+    margin-top: 96px;
+    font-size: 48px;
+    line-height: 72px;
+    border-left: 8px solid #AA0601;
+    padding: 0 16px;
+    font-weight: 600;
+}
+.select.row{
+    display: flex;
+    font-size: 24px;
+    /* line-height: 36px; */
+    align-items: center;
+    margin-top: 38px;
+    margin-bottom: 38px;
+}
+.select .col{
+    display: flex;
+    width: calc(33.333% - 1.5rem);
+    justify-content: space-between;
+    /* border: #000 1px solid; */
+    align-items: center;
+}
+select{
+    width: calc(100% - 7rem);
+    border: #000 1px solid;
+    background: #FFF;
+    font-size: 18px;
+    padding: 6px;
+}
+.row{
+    margin: 0 -12px;
+}
+.col{
+    margin: 0 12px;
+}
+.main .card-list{
+    margin: 0 -12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main .card{
+    width: calc(33.333% - 24px);
+    margin: 0 12px 24px;
+    /* border: 1px solid #000; */
+}
+.card-head,.card-body,.card-foot{
+    border: 1px #0006 solid;
+    border-bottom: transparent;
+}
+.card-head img{
+    width: 100%;
+    display: block;
+}
+.card-body{
+    padding: 8px 24px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.card-body .row{
+    display: flex;
+}
+.card-body .col{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px #000 solid; */
+    align-items:flex-start;
+    margin: 0;
+    justify-content:space-around;
+}
+.card-foot a{
+    display: block;
+    padding: 8px;
+    text-align: center;
+    background: #000;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 30px;
+}
+.material-symbols-outlined{
+    margin-right: 4px;
+}
+@media (max-width:1300px){
+    .select .col{
+        width: calc(50% - 3rem);
+        padding: 0 24PX;
+    }
+    .main .card-list{
+        margin: 0 -12px;
+        padding: 0 24px;
+    }
+    .main .card{
+        width: calc(50% - 24px);
+        margin: 0 12px 24px;
+    }
+}
+@media (max-width:768px){
+    .select .col{
+        width: calc(100% - 3rem);
+    }
+    .main .card-list{
+        margin: 0 -12px;
+        padding: 0 24px;
+    }
+    .main .card{
+        width: calc(100% - 24px);
+        margin: 0 12px 24px;
+    }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xcx100 week3</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="store.css">
+    <link rel="stylesheet" href="store-map.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid header">
+        <div class="container">
+            <div class="nav d-flex">
+                <div><a href="index.html"><img src="images/logo-white.png" alt=""></a></div>
+                <ul class="d-flex">
+                    <li><a href="product.html">系列鏡框</a></li>
+                    <li><a href="store.html">門市據點</a></li>
+                    <li><a href="blog.html">部落格</a></li>
+                    <li><a href="faq.html">常見問題</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid main">
+        <div class="container">
+            <div class="title">
+                <h2>門市據點</h2>
+            </div>
+            <div class="row select">
+                <div class="col">
+                    <p>選擇地區</p>
+                    <select name="" id="map">
+                        <option value="地址：台北市中山區南京東路25巷2-1號"
+                            data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4583811915213!2d121.52653047595675!3d25.052448437547447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a966f6fc092d%3A0x9f740ea896779b57!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuozmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1721091852653!5m2!1szh-TW!2stw"
+                            selected>台北中山旗艦店</option>
+                        <option value="地址：台北市中正區復興南路 132-1 號"
+                            data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14459.740832895468!2d121.53252671313297!3d25.03627278664889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab00655c5a0d%3A0xf5d32666da04ed3a!2z57Wx5Ym157e7!5e0!3m2!1szh-TW!2stw!4v1721099890425!5m2!1szh-TW!2stw">
+                            台北綠園店</option>
+                        <option value="地址：台中市清水區經南一路 23 號 8 樓"
+                            data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.071414421468!2d120.67134458584057!3d24.204278315427178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917a88a8f7347%3A0x4fb03557c0ea9890!2zNDI35Y-w5Lit5biC5r2t5a2Q5Y2A5aSn5b635LiA6LevMjPomZ8!5e0!3m2!1szh-TW!2stw!4v1721099946512!5m2!1szh-TW!2stw">
+                            台中清水旗艦店</option>
+                        <option value="地址：高雄市苓雅區中正路 38 號 12 樓"
+                            data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14731.055263975062!2d120.30345751228948!3d22.62529327767115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e04b85460b6e9%3A0x451fbfa7eed13c02!2z5Lit5q2j5LmL5pif!5e0!3m2!1szh-TW!2stw!4v1721099998258!5m2!1szh-TW!2stw">
+                            高雄中正形象店</option>
+                        <option value="地址：高雄市前鎮區中華一路 63 號 6 樓">
+                            高雄夢時代店</option>
+                    </select>
+                </div>
+            </div>
+            <script>
+
+                // console.log(data);
+                $("#map").on("change", function () {
+                    $("#map option:selected").each(function () {
+                        $("#es").html($(this).html());
+                        $("#esv").html($(this).val());
+                        // $("#iframe").src($(this).data());
+                    });
+                });
+            </script>
+            <div class="row map">
+                <div class="col col-5">
+                    <div class="card">
+                        <div class="card-head">
+                            <img src="images/store-1.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h3 id="es">台北中山旗艦店</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <span class="material-symbols-outlined">call</span>
+                                    <span class="material-symbols-outlined">schedule</span>
+                                    <span class="material-symbols-outlined">location_on</span>
+                                </div>
+                                <div class="col">
+                                    <p>電話：(02)000-1234</p>
+                                    <p>營業時間：10:00-21:00</p>
+                                    <p id="esv">地址：台北市中山區南京東路25巷2-1號</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-7">
+                    <iframe id="iframe"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4583811915213!2d121.52653047595675!3d25.052448437547447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a966f6fc092d%3A0x9f740ea896779b57!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuozmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1721091852653!5m2!1szh-TW!2stw"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer">
+        <div class="container">
+            <div class="row d-flex myrow">
+                <div class="col">
+                    <ul class="d-flex">
+                        <li><a href="#">首頁</a></li>
+                        <li><a href="#">系列鏡框</a></li>
+                        <li><a href="#">門市據點</a></li>
+                        <li><a href="#">部落格</a></li>
+                        <li><a href="#">常見問題</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="d-flex">
+                        <li><a href="#"><img src="images/ic-social-fb.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/ic_social_ig.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/ic_social_line.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mytext">
+                    <p><span class="material-symbols-outlined">call</span>0800-000-000</p>
+                    <p><span class="material-symbols-outlined">mail</span>glasses@business.com</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row myfooter d-flex">
+                <div class="col">
+                    <p>Copyright © 2020 Glasses.All rights reserved.</p>
+                </div>
+                <div class="col">
+                    <ul class="d-flex">
+                        <li><a href="#">隱私權政策</a></li>
+                        <li><a href="#">服務條款</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

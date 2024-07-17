@@ -73,8 +73,6 @@ body,*,*::after,*::before{
     display: inline-block;
 }
 ul{
-    /* margin-left: -32px;
-    margin-right: -32px; */
     align-items: center;
 }
 .nav img{
@@ -93,8 +91,6 @@ ul{
 .footer .row{
  width: 100%;
  padding: 20px 0 0;
- /* margin-right: -32px;
- margin-left: -32px; */
  justify-content: space-between;
  align-items: center;
 }
@@ -104,8 +100,6 @@ ul{
     align-items:center;
     margin-right: 8px;
     margin-left: 8px;
-    overflow-x: hidden;
-
 }
 
 .footer .row .col li a{
@@ -165,6 +159,9 @@ ul{
     .footer .col{
         padding-left: 72px;
     }
+    .footer .row .col{
+        margin: 0;
+    }
     .footer .row .col img{
         width: 40px;
         height: 40px;
@@ -179,6 +176,7 @@ ul{
     .footer .row .col {
         margin-right: 32px;
         margin-left: 32px;
+        
     }
     .myfooter .col{
         margin-bottom: 40px;
@@ -197,6 +195,7 @@ ul{
         height: auto;
         align-items:stretch;
         margin: 0;
+
         overflow-x: hidden;
     }
     .nav>div>a{
@@ -224,14 +223,20 @@ ul{
         padding: 16px;
         display: inline-block;
     }
+    .footer .row{
+        margin: 0;
+        padding: 32px;
+    }
    .footer .row:nth-child(1) .col:nth-child(1){
     display: none;
    }
-   .footer .row:nth-child(1) .col:nth-child(2) ul{
-    justify-content:flex-end;
+   .footer .row:nth-child(1)>.col:nth-child(2)>ul{
+    width: 30%;
+    justify-content: space-around;
     float: right;
+    margin: 0 -24px;
    }
-   .footer .row:nth-child(1) .col:nth-child(2){
+   .footer .row:nth-child(1)>.col:nth-child(2){
     width: 100%;
    }
    ul {
@@ -244,7 +249,6 @@ ul{
     .footer .row:nth-child(2){
         margin: 0 -32px;
         padding: 0;
-        /* float: left; */
     }
     .footer .mytext {
         font-size: 16px;
@@ -270,7 +274,8 @@ ul{
         bottom: 4rem;
     }
     .footer .container{
-        height: 236px;
+        height: 220px;
+        overflow: hidden;
     }
     .myfooter{
         flex-direction: column;
@@ -295,7 +300,6 @@ ul{
     }
     .myfooter .col {
         margin-bottom: 0;
-        padding-left: 5rem;
         width: 100%;
         text-align: left;
         justify-content:left;

@@ -234,7 +234,7 @@ ul{
     width: 30%;
     justify-content: space-around;
     float: right;
-    margin: 0 -24px;
+    margin: 0 16px;
    }
    .footer .row:nth-child(1)>.col:nth-child(2){
     width: 100%;

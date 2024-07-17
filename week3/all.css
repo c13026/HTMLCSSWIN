@@ -3,219 +3,336 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 /* css reset end */
-body,*,*::after,*::before{
-    font-family: "Roboto", "Noto Sans TC","Material Symbols Outlined";
+body,
+*,
+*::after,
+*::before {
+    font-family: "Roboto", "Noto Sans TC", "Material Symbols Outlined";
 }
-.container{
+
+.container {
     width: 1300px;
     margin: 0 auto;
 }
-.container-fluid{
+
+.container-fluid {
     width: 100%;
 }
-.header{
+
+.header {
     background: #AA0601;
 }
-.d-flex{
+
+.d-flex {
     display: flex;
 }
-.nav{
+
+.nav {
     justify-content: space-between;
 }
-.nav ul a{
+
+.nav ul a {
     color: #FFF;
     text-decoration: none;
     padding: 32px;
     display: inline-block;
 }
-ul{
+
+ul {
     align-items: center;
 }
-.nav img{
+
+.nav img {
     width: 80px;
     margin: 16px 0;
 }
 
-.footer{
+.footer {
     background: #AA0601;
     color: #FFF;
 }
-.footer a{
+
+.footer a {
     color: #FFF;
     text-decoration: none;
 }
-.footer .row{
- width: 100%;
- padding: 20px 0 0;
- justify-content: space-between;
- align-items: center;
+
+.footer .row {
+    width: 100%;
+    padding: 20px 0 0;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.footer .row .col{
-    justify-content:space-between;
-    align-items:center;
+.footer .row .col {
+    justify-content: space-between;
+    align-items: center;
     margin-right: 8px;
     margin-left: 8px;
 }
 
-.footer .row .col li a{
-    display:inline-block;
+.footer .row .col li a {
+    display: inline-block;
     padding: 24px;
 }
-.footer .row .col img{
+
+.footer .row .col img {
     width: 48px;
     height: 48px;
     display: inline-block;
     text-align: right;
 }
-.footer .mytext{
+
+.footer .mytext {
     font-size: 36px;
     line-height: 54px;
 }
-.footer .mytext span{
+
+.footer .mytext span {
     font-size: 48px;
     line-height: 54px;
     position: relative;
     top: 1rem;
 }
+
 .material-symbols-outlined {
     margin-right: 16px;
     font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24 !important;
-  }
-  hr{
-    margin: 32px 0;
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24 !important;
+}
+
+hr {
+    margin: 24px 0 12px;
     border: 1px solid #FFF;
-  }
-  .row.myfooter{
+}
+
+.row.myfooter {
     margin: 0;
     padding: 0;
-  }
-  @media (max-width:1300px){
-    .container{
+}
+
+@media (max-width:1300px) {
+    .container {
         width: 100%;
     }
-    .header{
+
+    .header {
         width: 100%;
     }
-    .header .nav{
+
+    .header .nav {
         justify-content: space-around;
     }
+
     .nav {
         margin: 0 32px;
-        justify-content:space-around;
+        justify-content: space-around;
     }
-    .footer .row{
-        margin: 0 -32px;
-        white-space:nowrap;
+
+    .footer .row {  
+        white-space: nowrap;
+        width: auto;
     }
+
     .footer .col{
-        padding-left: 72px;
+        padding-left: 16px;
     }
-    .footer .row .col{
+
+    .footer .row .col {
         margin: 0;
     }
-    .footer .row .col img{
+
+    .footer .row .col img {
         width: 40px;
         height: 40px;
     }
-    .footer .row .col li a{
+
+    .footer .row .col li a {
         padding: 12px;
     }
-    .footer hr{
-        margin-left: 3rem;
-        margin-right: 3rem;
+    .footer hr {
+        margin: 1rem;
     }
-    .footer .row .col {
-        margin-right: 32px;
-        margin-left: 32px;
-        
+    .myfooter.row .col{
+        margin: .75rem .5rem 1rem 0;
     }
-    .myfooter .col{
-        margin-bottom: 40px;
-    }
-  }
- @media (max-width:767px)  { /*and (min-width:376px) */
-    .container{
+}
+
+@media (max-width:767px) {
+    .container {
         width: 100%;
         overflow-x: hidden;
     }
-    .header{
+
+    .header {
         width: 100%;
     }
-    .header .nav{
+
+    .header .nav {
         flex-direction: column;
         height: auto;
-        align-items:stretch;
+        align-items: stretch;
         margin: 0;
 
         overflow-x: hidden;
     }
-    .nav>div>a{
+
+    .nav>div>a {
         margin: 0 16px;
         display: inline-block;
     }
-    .nav ul{
+
+    .nav ul {
         flex-wrap: wrap;
         align-items: center;
         text-align: center;
         background: #AA0601;
     }
-    .nav ul li{
+
+    .nav ul li {
         width: 50%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        
+
     }
-    .nav ul a{
+
+    .nav ul a {
         border: #FFF 1px solid;
         width: 100%;
         color: #FFF;
@@ -225,102 +342,133 @@ ul{
     }
     .footer .row{
         margin: 0;
-        padding: 32px;
     }
-   .footer .row:nth-child(1) .col:nth-child(1){
-    display: none;
-   }
-   .footer .row:nth-child(1)>.col:nth-child(2)>ul{
-    width: 30%;
-    justify-content: space-around;
-    float: right;
-    margin: 0 16px;
-   }
-   .footer .row:nth-child(1)>.col:nth-child(2){
-    width: 100%;
-   }
-   ul {
-    margin-left: -32px;
-    margin-right: -32px;
+    
+    .footer .row:nth-child(1){
+        display: flex;
+        justify-content:flex-end;
     }
-    .footer .row{
-        padding: 24px 0;
+    .footer .row:nth-child(1) .col:nth-child(1) {
+        display: none;
     }
-    .footer .row:nth-child(2){
-        margin: 0 -32px;
+
+    .footer .row:nth-child(1)>.col:nth-child(2)>ul {
+        justify-content: space-around;
         padding: 0;
+        margin: 0;
+    }
+
+    .footer .row:nth-child(1)>.col:nth-child(2) {
+        width: 45%;
+    }
+    .footer .row:nth-child(1) ul li{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .footer .row:nth-child(2) {
+        margin: 0;
+        padding: 0;
+    }
+    .footer .row:nth-child(2) p{
+        line-height: 1.5rem;
+        position: relative;
+        top: -2.25rem;
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+    }
+    .footer .row:nth-child(2) p .material-symbols-outlined{
+       /* border: 1px solid #0F0; */
+       display: inline-flex;
+       font-size: 1.5rem;
+       line-height: 1.2;
+       position: relative;
+       top: 0;
+       margin-top: -3px;
+       padding: 2px;
+    }
+    .myfooter.row .col {
+        margin: .5rem 0rem 0;
     }
     .footer .mytext {
         font-size: 16px;
         line-height: 24px;
-        position: relative;
-        bottom: 4.5rem;
     }
+
     .footer .mytext span {
         font-size: 24px;
         line-height: 24px;
-        position: relative;
-        top: 0.5rem;
     }
+
     .material-symbols-outlined {
         margin-right: 8px;
     }
+
     .footer .col {
         padding-left: 16px;
     }
+    
     .footer hr {
         margin: 0.5rem 1rem;
-        position: relative;
-        bottom: 4rem;
+        /* position: relative;
+        bottom: 4rem; */
     }
-    .footer .container{
-        height: 220px;
-        overflow: hidden;
-    }
+
     .myfooter{
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: start;
-        position: relative;
-        bottom: 5rem;
-    }
-    .myfooter .col{
-        margin-bottom: 0px;
+        justify-content:flex-start;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
     .myfooter ul{
         flex-direction: column;
+        justify-content: start;
         align-items: start;
     }
-    .myfooter ul li{
-        margin: 8px !important;
+
+    .myfooter ul li {
+        padding: 8px 12px;
     }
-    .myfooter .row{
+    .myfooter ul li a{
+        display:inline-block;
+        padding: 4px 8px;
+    }
+
+    .myfooter .row {
         padding: 0;
         margin: 0;
-    }
+    }    
+
     .myfooter .col {
         margin-bottom: 0;
         width: 100%;
         text-align: left;
-        justify-content:left;
+        justify-content: left;
     }
-    .myfooter p{
+
+    .myfooter p {
         font-size: 16px;
         line-height: 30px;
         padding-left: .5rem;
     }
-    .myfooter ul{
+
+    .myfooter ul {
         width: 100%;
         margin: 0;
     }
+
     .footer .row .col img {
         margin-left: 0px;
     }
-    .footer .row .col li{
+
+    .footer .row .col li {
         margin: 0;
     }
+
     .footer .row .col li a {
         padding: 0px;
     }
- }
- /* @media (max-width:375px){} */
+}

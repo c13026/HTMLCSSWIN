@@ -73,15 +73,14 @@ body,*,*::after,*::before{
     display: inline-block;
 }
 ul{
-    margin-left: -32px;
-    margin-right: -32px;
+    /* margin-left: -32px;
+    margin-right: -32px; */
     align-items: center;
 }
 .nav img{
     width: 80px;
     margin: 16px 0;
 }
-
 
 .footer{
     background: #AA0601;
@@ -99,14 +98,13 @@ ul{
  justify-content: space-between;
  align-items: center;
 }
-/* .myrow{
-    margin:0 16px;
-} */
+
 .footer .row .col{
     justify-content:space-between;
     align-items:center;
     margin-right: 8px;
     margin-left: 8px;
+    overflow-x: hidden;
 
 }
 
@@ -189,6 +187,7 @@ ul{
  @media (max-width:768px)  { /*and (min-width:376px) */
     .container{
         width: 100%;
+        overflow-x: hidden;
     }
     .header{
         width: 100%;
@@ -196,10 +195,15 @@ ul{
     .header .nav{
         flex-direction: column;
         height: auto;
-        width: 100%;
+        align-items:stretch;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    .nav>div>a{
+        margin: 0 16px;
+        display: inline-block;
     }
     .nav ul{
-        width: 100%;
         flex-wrap: wrap;
         align-items: center;
         text-align: center;

@@ -1,0 +1,36 @@
+.title{
+    margin-top: 96px;
+    font-size: 48px;
+    line-height: 72px;
+    border-left: 8px solid #AA0601;
+    padding: 0 16px !important;
+    font-weight: 600;
+}
+.main{
+    margin-bottom: 3rem;
+}
+.main .row{
+    display: flex;
+    flex-direction: column;
+}
+.main h3{
+    font-size: 24px;
+    line-height: 36px;
+    margin: 32px auto 24px;
+}
+.main h4{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+.main p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 32px ;
+    
+}
+@media (max-width:1300px){
+    .main .col{
+        padding: 0 16px;
+    }
+}

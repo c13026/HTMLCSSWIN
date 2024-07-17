@@ -412,8 +412,8 @@ hr {
     
     .footer hr {
         margin: 0.5rem 1rem;
-        /* position: relative;
-        bottom: 4rem; */
+        position: relative;
+        bottom: 1.5rem;
     }
 
     .myfooter{
@@ -422,6 +422,8 @@ hr {
         width: 100%;
         margin: 0;
         padding: 0;
+        position: relative;
+        bottom: 1rem;
     }
     .myfooter ul{
         flex-direction: column;

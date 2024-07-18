@@ -174,7 +174,7 @@ h3{
     }
     .tab-nav{
         background: #FFF;
-        position: sticky;
+        position: sticky !important;
         top: 0px;
     }
 

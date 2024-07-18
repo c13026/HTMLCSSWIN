@@ -172,5 +172,10 @@ h3{
         border: #0004 1px solid;
         text-decoration: none;
     }
+    .tab-nav{
+        background: #FFF;
+        position: sticky;
+        top: 0px;
+    }
 
 }

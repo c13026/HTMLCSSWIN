@@ -81,7 +81,7 @@
     margin-right: 4px;
 }
 @media (max-width:1300px){
-    .select .col{
+    .main .select .col{
         width: calc(50% - 3rem);
         padding: 0 24PX;
     }
@@ -95,7 +95,7 @@
     }
 }
 @media (max-width:767px){
-    .select .col{
+    .main .select .col{
         width: calc(100% - 3rem);
     }
     .main .card-list{

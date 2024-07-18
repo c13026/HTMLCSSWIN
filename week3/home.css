@@ -19,6 +19,9 @@ h2{
 .container.banner{
     overflow:visible;
 }
+.container>div{
+    overflow: hidden;
+}
 .banner{
     color: #650300;
 }
@@ -162,6 +165,7 @@ display: block;
 }
 form{
     margin-top: 24px;
+    margin-right: 2px;
 }
 form textarea,
 form input{
